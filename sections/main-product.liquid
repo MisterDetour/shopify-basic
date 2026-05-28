@@ -1,0 +1,39 @@
+<div>
+  <div class="page-width">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'title' -%}
+          <div {{ block.shopify_attributes }}>
+            <h1>{{ product.title }}</h1>
+          </div>
+        {%- when 'add_to_cart' -%}
+          <div {{ block.shopify_attributes }}>Add to Cart</div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "add_to_cart",
+      "name": "Add to Cart",
+      "limit": 1
+    }
+  ]
+}
+{% endschema %}

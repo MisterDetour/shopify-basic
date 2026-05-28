@@ -1,1 +1,3 @@
-- run themecheck
+- make sure all section previews work
+- aria markup
+- make sure works with recharge app

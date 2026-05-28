@@ -9,12 +9,26 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "hero",
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_mRUYGE": {
+          "type": "title",
+          "settings": {}
+        },
+        "add_to_cart_GHJK3H": {
+          "type": "add_to_cart",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_mRUYGE",
+        "add_to_cart_GHJK3H"
+      ],
       "settings": {}
     }
   },
   "order": [
-    "hero"
+    "main"
   ]
 }

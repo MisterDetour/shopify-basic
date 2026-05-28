@@ -18,16 +18,20 @@
 
     <link rel="canonical" href="{{ canonical_url }}">
 
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+
     {{ content_for_header }}
   </head>
 
   <body>
-    <a class="skip-to-content" href="#main-content">Skip to content</a>
+    <a class="skip-to-content visually-hidden" href="#main-content">Skip to content</a>
 
-    {% section 'header-group' %}
+    {% sections 'header-group' %}
 
     <main id="main-content" tabindex="-1">
       {{ content_for_layout }}
     </main>
+
+    {% sections 'footer-group' %}
   </body>
 </html>

@@ -8,13 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "name": "Header",
+  "type": "header",
   "sections": {
-    "hero": {
-      "type": "hero",
+    "header": {
+      "type": "header",
       "settings": {}
     }
   },
   "order": [
-    "hero"
+    "header"
   ]
 }

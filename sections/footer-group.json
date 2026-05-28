@@ -8,13 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "name": "Footer",
+  "type": "footer",
   "sections": {
-    "hero": {
-      "type": "hero",
+    "footer": {
+      "type": "footer",
       "settings": {}
     }
   },
   "order": [
-    "hero"
+    "footer"
   ]
 }
