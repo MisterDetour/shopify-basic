@@ -1,4 +1,13 @@
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "heading": "Hero"
+      }
+    }
+  },
+  "order": [
+    "hero"
+  ]
 }
