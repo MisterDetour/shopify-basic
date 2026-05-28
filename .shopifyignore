@@ -1,0 +1,7 @@
+.gitignore
+.prettierrc.json
+.theme-check.yml
+.vscode/*
+*.md
+.git/*
+.github/*
