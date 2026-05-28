@@ -4,9 +4,6 @@ jobs:
   theme-check:
     name: Theme Check
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      checks: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
