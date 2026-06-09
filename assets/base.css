@@ -1,3 +1,39 @@
+/* ----- Reset ----- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ----- Layout ----- */
+
+.container {
+  padding: 0 15px;
+}
+
+/* ----- Site Header ----- */
+
+.site-header {
+  background: rgb(239, 239, 239);
+  padding: 10px 0;
+}
+
+/* ----- Site Footer ----- */
+
+.site-footer {
+  background: rgb(239, 239, 239);
+  padding: 10px 0;
+}
+
+/* ----- Utility Classes ----- */
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;

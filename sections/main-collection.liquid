@@ -1,0 +1,13 @@
+<div>
+  <div class="container">
+    {%- for product in collection.products -%}
+      <p>{{ product.title }}</p>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Collection"
+}
+{% endschema %}

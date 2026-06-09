@@ -1,5 +1,5 @@
 <div>
-  <div class="page-width">
+  <div class="container">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -9,7 +9,15 @@
             <h1>{{ product.title }}</h1>
           </div>
         {%- when 'add_to_cart' -%}
-          <div {{ block.shopify_attributes }}>Add to Cart</div>
+          {% form 'product', product %}
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.selected_or_first_available_variant.id }}"
+            >
+            <input type="text" name="quantity" min="1" value="1">
+            <button type="submit">Add to Cart</button>
+          {% endform %}
       {%- endcase -%}
     {%- endfor -%}
   </div>
